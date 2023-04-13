@@ -1,0 +1,465 @@
+body {
+    background-color: #e6e6e6;
+    box-sizing: border-box;
+}
+li {
+    height: 35px;
+    position: relative;
+}
+
+/* swection=sidebar */
+/* class */
+.sidebar-body {
+    position: relative;
+    top: -20px;
+}
+.sidebar-icon {
+    margin-right: 20px;
+    font-size: 1.5rem;
+    position: relative;
+    top: 3px;
+}
+.sidebar-paragraph {
+    margin: 30px 20px;
+}
+.div-link {
+    width: 200px;
+    height: 35px;
+    text-align: left;
+}
+.sidebar-links {
+    text-decoration: none;
+    color: black;
+    display: block;
+    border-radius: 10px;
+}
+.sidebar-links:hover {
+    background-color: #f2f2f2;
+    color: #4d4d4d;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.dropdown-menu {
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid #bfbfbf;
+    position: relative;
+    z-index: 1;
+}
+.dropdown-item {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.dropdown-item:hover {
+    background-color: #f2f2f2;
+    color: #4d4d4d;
+    font-size: 1.2rem;
+}
+.more-icon {
+    position: absolute;
+    right: 20px;
+    top: 9px;
+    font-size: 1.2rem;
+}
+.hr {
+    margin: 0;
+}
+
+/* #ID's */
+#sidebar {
+    width: 20%;
+    position: fixed;
+    height: 100%;
+}
+#sidebar-label {
+    font-size: 2rem;
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+    line-height: 2rem;
+    margin-top: 5px;
+    margin: 20px 20px 5px ;
+}
+#sidebar-Profile-pic {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#more-tools {
+    position: absolute;
+    bottom: 30px;
+    margin-left: 0 10px;
+    padding: 0;
+}
+#moretools {
+    margin: 20px 0;
+    padding: 0 22px;
+    border: 0;
+}
+#moretools:hover {
+    background-color: #f2f2f2;
+    color: #4d4d4d;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 200px;
+    height: 35px;
+}
+#new-hr {
+    margin: 0;
+    border-top: 5px solid grey;
+}
+
+/* Vertical-line */
+.vl {
+    border-left: 2px solid #bfbfbf;
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0; 
+    margin-left: -1px; 
+}
+
+
+/* section=main-content */
+/* class */
+.main-content-container {
+    margin: 2% 12% ;
+}
+
+/* stories */
+.stories-div-container {
+    background-color: white;
+    width: 450px;
+    height: 120px;
+    border: 1px solid #bfbfbf;
+    border-radius: 10px;
+    display: flex;
+    overflow: auto;
+}
+.stories-div-container::-webkit-scrollbar{
+    width: 0;
+}
+.stories-div-container .stories-div {
+    text-align: center;
+    min-width: 17%;
+    height: 89%;
+}
+.stories-div {
+    position: relative;
+    top: 10%;
+}
+.stories-link {
+    text-decoration: none;
+}
+.stories-img {
+    border-radius: 50%;
+    height:60px;
+    width: 60px;
+    background: linear-gradient(to right, orange, #cc66ff);
+    padding: 3%;
+}
+.stories-profileName {
+    color: #bfbfbf;
+    font-size: small;
+    width: 90%;
+    margin: 7% auto;
+}
+
+/* posts */
+.post-div-container {
+    width: 450px;
+    height: 810px;
+}
+.post {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-top: 3%;
+    border: 1px solid #bfbfbf;
+    border-radius: 10px;
+}
+/* header */
+.post-header {
+    height: 9%;
+    position: relative;
+}
+.post-profile-pic {
+    border-radius: 50%;
+    height:60px;
+    width: 60px;
+    background: linear-gradient(to right, orange, #cc66ff);
+    padding: .5%;
+    margin: 1% 2%;
+}
+.post-header-text {
+    display: inline;
+    color: black;
+    font-weight: 5px;
+    font-family: 'Oxygen', sans-serif;
+}
+.post-header-text:hover {
+    color: #bfbfbf;
+}
+.verified {
+    color: #005ce6;
+    margin-left: 2px;
+}
+.ellipsis-link {
+    color: black;
+}
+.ellipsis-link:hover {
+    color: black;
+}
+.fa-ellipsis {
+    position: absolute;
+    right: 15px;
+    top: 25px;
+}
+/* body */
+.post-body {
+    height: 85%;
+}
+.post-img {
+    height: 544px;
+    width: 450px;
+}
+.comments {
+    width: 100%;
+    height: 20%;
+    position: relative;
+}
+.icons {
+    margin-bottom: 1%;
+}
+.comment-icons {
+    font-size: 1.5rem;
+    margin: 2%;
+}
+.comment-icons:hover {
+    color: #bfbfbf;
+}
+.fa-bookmark {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+
+}
+.comment-texts {
+    margin:  0% 2% 1%;
+    color: black;
+    font-size: .9rem;
+    font-weight: 20px;
+    font-family: 'Oxygen', sans-serif;
+}
+.comment-username {
+    font-size: 1rem;
+    font-weight: 5px;
+}
+.views {
+    color: #bfbfbf;
+    font-size: .7rem;
+}
+
+
+/* ID's */
+/* buttons */
+#post-previous {
+    height: 20%;
+    top: 40%;
+}
+#post-next {
+    height: 20%;
+    top: 40%;
+}
+
+
+/* footer */
+.post-footer {
+    height: 6%;
+    position: relative;
+}
+.fa-face-smile {
+    font-size: 1.5rem;
+    margin: 2% 2% 2% 4% ;
+}
+.footer-text {
+    display: inline;
+    color: #bfbfbf;
+    font-size: .9rem;
+}
+.footer-link {
+    position: absolute;
+    right: 4%;
+    top: 20%;
+    text-decoration: none;
+    color: #b3d1ff;
+}
+.post-hr {
+    margin: 0;
+    color: #bfbfbf;
+}
+
+
+
+/* section=main-content */
+/* accounts */
+.account-div-container {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    top: -920px;
+    left: 470px;
+    padding: 100px;
+
+}
+.account-position {
+    position: relative;
+    top: -100px;
+    left: -100px;
+}
+.account-header {
+    width: 200%;
+    height: 30%;
+}
+.account-header-text {
+    display: inline;
+    color: black;
+    font-weight: 5px;
+    font-family: 'Oxygen', sans-serif;
+    text-decoration: none;
+    font-size: .9rem;
+}
+.account-header-text:hover {
+    color: black;
+    font-size: 1rem;
+}
+.account-profile {
+    border-radius: 50%;
+    height:60px;
+    width: 60px;
+    margin: 3% 2%;
+}
+.account-profile-text {
+    color: #bfbfbf;
+    font-size: .9rem;
+}
+.account-texts {
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    height: 30px;
+}
+.account-header-link {
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    font-size: .8rem;
+    text-decoration: none;
+}
+.suggested-account {
+    margin-bottom: 2%;
+}
+.suggested-account-texts {
+    position: relative;
+}
+.suggested-account-head-text {
+    text-decoration: none;
+    color: black;
+    font-size: .8rem;
+}
+.suggested-account-head-text:hover {
+    color: #bfbfbf;
+}
+.suggested-account-head-para {
+    color: black;
+    font-size: .8rem;
+}
+.suggested-account-link {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    text-decoration: none;
+    font-size: .8rem;
+}
+.suggested-account-link:hover {
+    color: black;
+    
+}
+
+.account-body {
+    width: 200%;
+    height: 120%;
+}
+.suggestion {
+    color: #bfbfbf;
+    margin-left: 2%;
+    display: inline;
+}
+.suggestion-link {
+    color: black;
+    text-decoration: none;
+    float: right;
+    margin-right: 2%;
+}
+.suggestion-link:hover {
+    color: #bfbfbf;
+}
+.suggested-account-div {
+    margin: 2%;
+}
+.suggested-account {
+    height: 30%;
+    position: relative;
+}
+.accounts-profile {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 0% 2% 2% 0%;
+}
+.suggested-account-texts {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    height: 30px;
+}
+
+
+.account-footer {
+    width: 200%;
+    height: 30%;
+}
+.footer-link-div {
+    margin: 2%;
+    color: #bfbfbf;
+}
+.footer-links {
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: .8rem;
+}
+.footer-links:hover {
+    text-decoration: underline;
+    color: #bfbfbf;
+}
+.footer-links::after {
+    position: relative;
+    font-weight: 1.5rem;
+    content: " .";
+    color: #bfbfbf;
+    bottom: 3px;
+}
+
+/* ID's */
+#main-content {
+    background-color: #f2f2f2;
+    width: 80%;
+    height: 10000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
